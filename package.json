@@ -1,0 +1,31 @@
+{
+  "name": "office-workflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commit": "node .githooks/customize.js",
+    "start": "rollup -c -w",
+    "lint:fix": "eslint --fix . --ext .js",
+    "prepare": "node .githooks/config.js",
+    "release": "standard-version --no-verify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "inquirer": "^8.1.2",
+    "prettier": "^2.3.2",
+    "rollup": "^2.56.1",
+    "rollup-plugin-sass": "^1.2.4",
+    "rollup-plugin-typescript2": "^0.30.0"
+  }
+}
